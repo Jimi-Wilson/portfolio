@@ -1,7 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+
+import {GithubLogo} from "@/components/GithubLogo";
+
 ---
 
 <Layout>
+    <div class="flex flex-row justify-center">
+    <Card>
+        <CardHeader>
+        <CardTitle>Weather Station</CardTitle>
+        <CardDescription>A Full-Stack weather station....</CardDescription>
+            <CardAction>
+                    <GithubLogo url="https://github.com/Jimi-Wilson/weather-station"/>
+            </CardAction>
+        </CardHeader>
+        <CardContent>
+            <a href="https://weather.jimiwilson.tech" class="p-10">Place Holder IMG</a>
+        </CardContent>
 
+        <CardFooter>
+            <div class="flex flex-row gap-5">
+                <CardAction>Find Out More</CardAction>
+                <CardAction>
+                    <a href="https://weather.jimiwilson.tech">Visit</a>
+                </CardAction>
+            </div>
+        </CardFooter>
+
+    </Card>
+    </div>
 </Layout>
