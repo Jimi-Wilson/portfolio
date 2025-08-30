@@ -1,6 +1,6 @@
 ---
  import '../styles/global.css'
- import { ModeToggle } from '@/components/ModeToggle';
+ import Header from "../components/Header.astro";
 
 ---
 
@@ -33,11 +33,8 @@
 
     </head>
     <body>
-        <header>
-            <nav>
-                <ModeToggle client:load />
-            </nav>
-        </header>
+        <Header />
+
 
             <slot />
 	</body>

@@ -1,0 +1,19 @@
+---
+import { ModeToggle } from '@/components/ModeToggle';
+import { GithubLogo } from './GithubLogo';
+---
+<header class="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="flex h-14 w-full items-center justify-between">
+        <div class="mr-4 flex">
+            <a href="/" class="mr-6 ml-6 flex items-center space-x-2">
+                <span class="font-bold">Jimi Wilson</span>
+            </a>
+
+        </div>
+
+        <div class="flex items-center justify-end gap-2 mr-4">
+            <GithubLogo url="https://github.com/Jimi-Wilson" variant={"outline"}/>
+            <ModeToggle client:load />
+        </div>
+    </div>
+</header>
