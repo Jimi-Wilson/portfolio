@@ -13,8 +13,9 @@ type GithubLogoProps = {
 
 export function GithubLogo({url, variant="outline"}: GithubLogoProps ) {
     return (
-        <Button variant={variant} size={"icon"} asChild>
+        <Button variant={variant} asChild>
             <a href={url} target="_blank" rel="noopener noreferrer">
+                GitHub
                 <img src={GithubLightUrl} alt="GitHub" className="h-6 w-6 block dark:hidden" />
                 <img src={GithubDarkUrl} alt="GitHub" className="h-6 w-6 hidden dark:block" />
             </a>
