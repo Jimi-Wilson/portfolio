@@ -1,6 +1,7 @@
 ---
  import '../styles/global.css'
  import Header from "../components/Header.astro";
+ const {title} = Astro.props;
 
 ---
 
@@ -10,7 +11,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 
         <script is:inline>
             const getThemePreference = () => {
@@ -36,7 +37,7 @@
         <Header />
 
 
-            <slot />
+        <slot />
 	</body>
 </html>
 
