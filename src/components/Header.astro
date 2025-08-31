@@ -1,6 +1,7 @@
 ---
 import { ModeToggle } from '@/components/ModeToggle';
 import { GithubLogo } from './GithubLogo';
+import { LinkedInLogo } from "./LinkedInLogo";
 ---
 <header class="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div class="flex h-14 w-full items-center justify-between">
@@ -12,6 +13,7 @@ import { GithubLogo } from './GithubLogo';
         </div>
 
         <div class="flex items-center justify-end gap-2 mr-4">
+            <LinkedInLogo url="https://www.linkedin.com/in/jimi-wilson-6a0634203/" variant={"outline"}/>
             <GithubLogo url="https://github.com/Jimi-Wilson" variant={"outline"}/>
             <ModeToggle client:load />
         </div>
