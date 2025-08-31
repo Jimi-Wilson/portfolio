@@ -5,17 +5,19 @@ import LinkedInLightUrl from '@/assets/InBug-Black.png?url'
 import {Button} from "@/components/ui/button.tsx";
 
 
-type GithubLogoProps = {
+type LinkedInLogoProps = {
     url: string;
+    text: string;
+    size: ComponentProps<typeof Button>["size"];
     variant: ComponentProps<typeof Button>["variant"];
 }
 
 
-export function LinkedInLogo({url, variant="outline"}: GithubLogoProps ) {
+export function LinkedInLogo({url, text, size, variant="outline"}:LinkedInLogoProps ) {
     return (
-        <Button variant={variant} asChild>
+        <Button variant={variant} size={size} asChild>
             <a href={url} target="_blank" rel="noopener noreferrer">
-                LinkedIn
+                {text}
                 <img src={LinkedInLightUrl} alt="GitHub" className="h-6 w-6 block dark:hidden" />
                 <img src={LinkedInDarkUrl} alt="GitHub" className="h-6 w-6 hidden dark:block" />
             </a>
